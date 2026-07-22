@@ -31,7 +31,9 @@
           "image": "./assets/images/splash.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      "expo-audio",
+      "expo-web-browser"
     ],
     "experiments": {
       "typedRoutes": true,

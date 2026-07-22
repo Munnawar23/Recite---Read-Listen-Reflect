@@ -1,0 +1,66 @@
+{
+  "common": {
+    "welcome": "Welcome",
+    "settings": "Settings",
+    "language": "Language",
+    "selectLanguage": "Select Language",
+    "home": "Home",
+    "recite": "Recite",
+    "listen": "Listen",
+    "reflect": "Reflect",
+    "save": "Save",
+    "cancel": "Cancel",
+    "tryAgain": "Try Again",
+    "quran": "Quran",
+    "qibla": "Qibla",
+    "library": "Library"
+  },
+  "splash": {
+    "title": "Recite",
+    "subtitle": "Read • Listen • Reflect"
+  },
+  "tabs": {
+    "home": "Home",
+    "quran": "Noble Quran",
+    "qibla": "Qibla",
+    "library": "Library",
+    "settings": "Settings"
+  },
+  "errorBoundary": {
+    "title": "Something Went Wrong",
+    "subtitle": "An unexpected error occurred in the application. You can try restarting or resetting the current view."
+  },
+  "settings": {
+    "language": {
+      "title": "App Language",
+      "subtitle": "Choose your preferred language for the application interface."
+    },
+    "theme": {
+      "title": "App Theme",
+      "subtitle": "Choose your preferred appearance or sync with system settings.",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System"
+    },
+    "fontSize": {
+      "title": "Text Size",
+      "subtitle": "Adjust the reading font size across the entire application.",
+      "small": "Small",
+      "default": "Default",
+      "large": "Large"
+    },
+    "errorTest": {
+      "title": "Error Boundary Test",
+      "subtitle": "Test how the app handles unexpected errors gracefully.",
+      "button": "Simulate App Crash"
+    }
+  },
+  "languages": {
+    "en": "English",
+    "ar": "Arabic",
+    "ur": "Urdu",
+    "hi": "Hindi",
+    "id": "Indonesian",
+    "bn": "Bengali"
+  }
+}

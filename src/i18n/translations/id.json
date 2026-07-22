@@ -1,0 +1,66 @@
+{
+  "common": {
+    "welcome": "Selamat Datang",
+    "settings": "Pengaturan",
+    "language": "Bahasa",
+    "selectLanguage": "Pilih Bahasa",
+    "home": "Beranda",
+    "recite": "Membaca",
+    "listen": "Mendengar",
+    "reflect": "Merenung",
+    "save": "Simpan",
+    "cancel": "Batal",
+    "tryAgain": "Coba Lagi",
+    "quran": "Al-Qur'an",
+    "qibla": "Qibla",
+    "library": "Perpustakaan"
+  },
+  "splash": {
+    "title": "Recite",
+    "subtitle": "Baca • Dengar • Renungkan"
+  },
+  "tabs": {
+    "home": "Beranda",
+    "quran": "Al-Qur'an",
+    "qibla": "Qibla",
+    "library": "Perpustakaan",
+    "settings": "Pengaturan"
+  },
+  "errorBoundary": {
+    "title": "Ada yang Salah",
+    "subtitle": "Terjadi kesalahan yang tidak terduga dalam aplikasi. Anda dapat mencoba memulai ulang atau menyetel ulang tampilan saat ini."
+  },
+  "settings": {
+    "language": {
+      "title": "Bahasa Aplikasi",
+      "subtitle": "Pilih bahasa pilihan Anda untuk antarmuka aplikasi."
+    },
+    "theme": {
+      "title": "Tema Aplikasi",
+      "subtitle": "Pilih tampilan yang Anda sukai atau samakan dengan pengaturan sistem.",
+      "light": "Terang",
+      "dark": "Gelap",
+      "system": "Sistem"
+    },
+    "fontSize": {
+      "title": "Ukuran Teks",
+      "subtitle": "Sesuaikan ukuran font bacaan di seluruh aplikasi.",
+      "small": "Kecil",
+      "default": "Default",
+      "large": "Besar"
+    },
+    "errorTest": {
+      "title": "Tes Error Boundary",
+      "subtitle": "Uji bagaimana aplikasi menangani kesalahan yang tidak terduga dengan baik.",
+      "button": "Simulasi Aplikasi Crash"
+    }
+  },
+  "languages": {
+    "en": "Inggris",
+    "ar": "Arab",
+    "ur": "Urdu",
+    "hi": "Hindi",
+    "id": "Bahasa Indonesia",
+    "bn": "Bengali"
+  }
+}

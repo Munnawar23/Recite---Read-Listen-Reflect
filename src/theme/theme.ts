@@ -1,5 +1,4 @@
 import { darkColors, lightColors, type ThemeColors } from "./colors";
-import { fontFamily, fontSize, type ThemeFontSize } from "./typography";
 
 export const theme = {
   light: {
@@ -8,9 +7,8 @@ export const theme = {
   dark: {
     colors: darkColors,
   },
-  fontFamily,
-  fontSize,
 };
 
-export { darkColors, fontFamily, fontSize, lightColors, type ThemeColors, type ThemeFontSize };
+export { darkColors, lightColors, type ThemeColors };
 export type AppTheme = typeof theme;
+

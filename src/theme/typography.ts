@@ -11,19 +11,19 @@ export const fontFamily = {
 
 // ─── Semantic Font Sizes (pre-scaled) ────────────────────────────────────
 export const fontSize = {
-  badge: moderateScale(10), // tiny labels, badges, pill text
-  caption: moderateScale(10), // secondary info, sub-greetings, prayer times
-  body: moderateScale(11), // standard body text, prayer names, button labels
-  bodyMd: moderateScale(12), // medium body, card subtitles, year labels
-  bodyLg: moderateScale(13), // large body, translations, section titles
-  title: moderateScale(14), // card/section titles, empty state headings
-  subtitle: moderateScale(15), // sub-headings
-  heading: moderateScale(18), // screen-level greetings, large labels
-  cardTitle: moderateScale(18), // card-level titles (e.g. Hijri month name)
-  arabic: moderateScale(22), // arabic verse text
-  display: moderateScale(60), // large display numbers (e.g. Hijri day number)
-  splashTitle: moderateScale(28), // splash screen title
-  splashSubtitle: moderateScale(13), // splash screen subtitle
+  badge: moderateScale(11), // tiny labels, badges, pill text
+  caption: moderateScale(11), // secondary info, sub-greetings, prayer times
+  body: moderateScale(12), // standard body text, prayer names, button labels
+  bodyMd: moderateScale(13), // medium body, card subtitles, year labels
+  bodyLg: moderateScale(14), // large body, translations, section titles
+  title: moderateScale(15), // card/section titles, empty state headings
+  subtitle: moderateScale(16), // sub-headings
+  heading: moderateScale(19), // screen-level greetings, large labels
+  cardTitle: moderateScale(19), // card-level titles (e.g. Hijri month name)
+  arabic: moderateScale(23), // arabic verse text
+  display: moderateScale(61), // large display numbers (e.g. Hijri day number)
+  splashTitle: moderateScale(29), // splash screen title
+  splashSubtitle: moderateScale(14), // splash screen subtitle
 };
 
 export type ThemeFontSize = typeof fontSize;

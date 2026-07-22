@@ -1,4 +1,4 @@
-import AsyncStorage from "@react-native-async-storage/async-storage";
+import { STORAGE_KEYS, zustandStorage } from "@/lib/storage/appStorage";
 import { create } from "zustand";
 import { createJSONStorage, persist } from "zustand/middleware";
 
@@ -16,8 +16,8 @@ export const useThemeStore = create<ThemeState>()(
       setThemeMode: (mode) => set({ themeMode: mode }),
     }),
     {
-      name: "theme-storage",
-      storage: createJSONStorage(() => AsyncStorage),
+      name: STORAGE_KEYS.THEME,
+      storage: createJSONStorage(() => zustandStorage),
     },
   ),
 );

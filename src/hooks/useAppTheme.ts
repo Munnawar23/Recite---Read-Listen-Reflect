@@ -1,10 +1,12 @@
+import { useAppFonts } from "@/hooks/useAppFonts";
 import { useThemeStore } from "@/store/themeStore";
 import { theme } from "@/theme/theme";
 import { useColorScheme } from "react-native";
 
 export function useAppTheme() {
-  const { themeMode } = useThemeStore();
+  const { themeMode, setThemeMode } = useThemeStore();
   const systemColorScheme = useColorScheme();
+  const appFonts = useAppFonts();
 
   const activeScheme: "light" | "dark" =
     themeMode === "system"
@@ -17,9 +19,12 @@ export function useAppTheme() {
 
   return {
     themeMode,
+    setThemeMode,
     activeScheme,
     colors,
-    fontFamily: theme.fontFamily,
-    fontSize: theme.fontSize,
+    ...appFonts,
   };
 }
+
+
+
