@@ -23,8 +23,34 @@
     "home": "होम",
     "quran": "पवित्र कुरआन",
     "qibla": "क़िबला",
-    "library": "पुस्तकालय",
+    "library": "लाइब्रेरी",
     "settings": "सेटिंग्स"
+  },
+  "home": {
+    "greeting": {
+      "title": "अस्सलामु अलैकुम",
+      "subtitle": "आपका दिन बरकतों से भरा हो"
+    },
+    "hijriCard": {
+      "badge": "इस्लामी तारीख",
+      "yearSuffix": "हिजरी"
+    },
+    "sectionTitles": {
+      "prayerTimes": "नमाज़ के समय",
+      "dailyVerse": "आज की आयत",
+      "continueReading": "पढ़ना जारी रखें"
+    },
+    "prayerNames": {
+      "fajr": "फ़ज्र",
+      "dhuhr": "ज़ुहर",
+      "asr": "असर",
+      "maghrib": "मग़रिब",
+      "isha": "ईशा"
+    },
+    "locationNotice": {
+      "showingMecca": "मक्का के औक़ात दिखाए जा रहे हैं।",
+      "enableLocation": "लोकेशन चालू करने के लिए टैप करें"
+    }
   },
   "errorBoundary": {
     "title": "कुछ गलत हो गया",

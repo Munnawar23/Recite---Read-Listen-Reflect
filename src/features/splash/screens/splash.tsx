@@ -13,9 +13,9 @@ export default function SplashScreen() {
   const router = useRouter();
   const { t } = useTranslation();
 
-  const { colors, fontFamily, fontSize: fontSizes } = useAppTheme();
+  const { colors, fontFamily, fontSize: fontSizes, spacing } = useAppTheme();
 
-  const styles = createStyles(colors, fontFamily, fontSizes);
+  const styles = createStyles(colors, fontFamily, fontSizes, spacing);
 
   const handleRedirect = useCallback(() => {
     router.replace("/(tabs)/home" as Href);
@@ -41,13 +41,15 @@ export default function SplashScreen() {
       <View style={styles.textContainer}>
         <Text style={styles.title}>{t("splash.title", "Recite")}</Text>
 
-        <Text style={styles.subtitle}>{t("splash.subtitle", "Read • Listen • Reflect")}</Text>
+        <Text style={styles.subtitle}>
+          {t("splash.subtitle", "Read • Listen • Reflect")}
+        </Text>
       </View>
     </View>
   );
 }
 
-const createStyles = (colors: any, fontFamily: any, fontSizes: any) =>
+const createStyles = (colors: any, fontFamily: any, fontSizes: any, spacing: any) =>
   StyleSheet.create({
     container: {
       flex: 1,
@@ -62,7 +64,7 @@ const createStyles = (colors: any, fontFamily: any, fontSizes: any) =>
 
     textContainer: {
       alignItems: "center",
-      marginTop: verticalScale(20),
+      marginTop: spacing.vXl,
     },
 
     title: {
@@ -74,10 +76,10 @@ const createStyles = (colors: any, fontFamily: any, fontSizes: any) =>
     },
 
     subtitle: {
-      marginTop: verticalScale(6),
-      fontSize: fontSizes.splashSubtitle,
+      marginTop: spacing.vXs,
+      fontSize: fontSizes.title,
       color: colors.splashSubtext,
-      fontFamily: fontFamily.bodyMedium,
+      fontFamily: fontFamily.text,
       textAlign: "center",
       letterSpacing: 1.5,
     },

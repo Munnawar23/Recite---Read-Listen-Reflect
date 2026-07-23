@@ -26,6 +26,32 @@
     "library": "Library",
     "settings": "Settings"
   },
+  "home": {
+    "greeting": {
+      "title": "Assalamu Alaikum",
+      "subtitle": "May your day be full of blessings"
+    },
+    "hijriCard": {
+      "badge": "Islamic Date",
+      "yearSuffix": "AH"
+    },
+    "sectionTitles": {
+      "prayerTimes": "Prayer Times",
+      "dailyVerse": "Daily Verse",
+      "continueReading": "Continue Reading"
+    },
+    "prayerNames": {
+      "fajr": "Fajr",
+      "dhuhr": "Dhuhr",
+      "asr": "Asr",
+      "maghrib": "Maghrib",
+      "isha": "Isha"
+    },
+    "locationNotice": {
+      "showingMecca": "Showing Mecca times.",
+      "enableLocation": "Tap to enable location"
+    }
+  },
   "errorBoundary": {
     "title": "Something Went Wrong",
     "subtitle": "An unexpected error occurred in the application. You can try restarting or resetting the current view."

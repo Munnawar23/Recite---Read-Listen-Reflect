@@ -8,7 +8,7 @@ import { ThemeMode } from "@/store/themeStore";
 import { Ionicons } from "@expo/vector-icons";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, ScrollView, StyleSheet, Text, View } from "react-native";
 import { scale, verticalScale } from "react-native-size-matters";
 
 const THEME_OPTIONS: {
@@ -52,61 +52,65 @@ export default function SettingsScreen() {
   }
 
   return (
-    <SafeArea contentContainerStyle={styles.container}>
-      <Text
-        style={[
-          styles.headerTitle,
-          {
-            color: colors.text,
-            fontFamily: fontFamily.heading,
-            fontSize: fontSize.heading + 6,
-          },
-        ]}
+    <SafeArea>
+      <ScrollView
+        contentContainerStyle={styles.container}
+        showsVerticalScrollIndicator={false}
       >
-        {t("common.settings", "Settings")}
-      </Text>
-
-      {/* Language Selection Card */}
-      <View
-        style={[
-          styles.card,
-          { backgroundColor: colors.card, borderColor: colors.border },
-        ]}
-      >
-        <View style={styles.cardHeader}>
-          <Ionicons
-            name="language-outline"
-            size={20}
-            color={colors.accent}
-          />
-          <Text
-            style={[
-              styles.cardTitle,
-              {
-                color: colors.text,
-                fontFamily: fontFamily["body-semibold"],
-                fontSize: fontSize.title,
-              },
-            ]}
-          >
-            {t("settings.language.title", "App Language")}
-          </Text>
-        </View>
-
         <Text
           style={[
-            styles.cardSubtitle,
+            styles.headerTitle,
             {
-              color: colors.subtext,
-              fontFamily: fontFamily.body,
-              fontSize: fontSize.bodyMd,
+              color: colors.text,
+              fontFamily: fontFamily.heading,
+              fontSize: fontSize.heading + 6,
             },
           ]}
         >
-          {t("settings.language.subtitle", "Choose your preferred language for the application interface.")}
+          {t("common.settings", "Settings")}
         </Text>
 
-        <View style={styles.languageGrid}>
+        {/* Language Selection Card */}
+        <View
+          style={[
+            styles.card,
+            { backgroundColor: colors.card, borderColor: colors.border },
+          ]}
+        >
+          <View style={styles.cardHeader}>
+            <Ionicons
+              name="language-outline"
+              size={20}
+              color={colors.accent}
+            />
+            <Text
+              style={[
+                styles.cardTitle,
+                {
+                  color: colors.text,
+                  fontFamily: fontFamily.title,
+                  fontSize: fontSize.title,
+                },
+              ]}
+            >
+              {t("settings.language.title", "App Language")}
+            </Text>
+          </View>
+
+          <Text
+            style={[
+              styles.cardSubtitle,
+              {
+                color: colors.subtext,
+                fontFamily: fontFamily.text,
+                fontSize: fontSize.body,
+              },
+            ]}
+          >
+            {t("settings.language.subtitle", "Choose your preferred language for the application interface.")}
+          </Text>
+
+          <View style={styles.languageGrid}>
           {SUPPORTED_LANGUAGES.map((lang) => {
             const isSelected = language === lang.code;
             return (
@@ -139,8 +143,8 @@ export default function SettingsScreen() {
                     {
                       color: isSelected ? colors.card : colors.text,
                       fontFamily: isSelected
-                        ? fontFamily["body-semibold"]
-                        : fontFamily["body-medium"],
+                        ? fontFamily.title
+                        : fontFamily.text,
                       fontSize: fontSize.body,
                     },
                   ]}
@@ -173,7 +177,7 @@ export default function SettingsScreen() {
               styles.cardTitle,
               {
                 color: colors.text,
-                fontFamily: fontFamily["body-semibold"],
+                fontFamily: fontFamily.title,
                 fontSize: fontSize.title,
               },
             ]}
@@ -187,8 +191,8 @@ export default function SettingsScreen() {
             styles.cardSubtitle,
             {
               color: colors.subtext,
-              fontFamily: fontFamily.body,
-              fontSize: fontSize.bodyMd,
+              fontFamily: fontFamily.text,
+              fontSize: fontSize.body,
             },
           ]}
         >
@@ -230,8 +234,8 @@ export default function SettingsScreen() {
                     {
                       color: isSelected ? colors.card : colors.text,
                       fontFamily: isSelected
-                        ? fontFamily["body-semibold"]
-                        : fontFamily["body-medium"],
+                        ? fontFamily.title
+                        : fontFamily.text,
                       fontSize: fontSize.body,
                     },
                   ]}
@@ -259,7 +263,7 @@ export default function SettingsScreen() {
               styles.cardTitle,
               {
                 color: colors.text,
-                fontFamily: fontFamily["body-semibold"],
+                fontFamily: fontFamily.title,
                 fontSize: fontSize.title,
               },
             ]}
@@ -273,8 +277,8 @@ export default function SettingsScreen() {
             styles.cardSubtitle,
             {
               color: colors.subtext,
-              fontFamily: fontFamily.body,
-              fontSize: fontSize.bodyMd,
+              fontFamily: fontFamily.text,
+              fontSize: fontSize.body,
             },
           ]}
         >
@@ -322,8 +326,8 @@ export default function SettingsScreen() {
                     {
                       color: isSelected ? colors.card : colors.text,
                       fontFamily: isSelected
-                        ? fontFamily["body-semibold"]
-                        : fontFamily["body-medium"],
+                        ? fontFamily.title
+                        : fontFamily.text,
                       fontSize: fontSize.body,
                     },
                   ]}
@@ -333,6 +337,34 @@ export default function SettingsScreen() {
               </Pressable>
             );
           })}
+        </View>
+
+        {/* Live Font & Color Preview Box */}
+        <View
+          style={[
+            styles.previewContainer,
+            { backgroundColor: colors.background, borderColor: colors.border },
+          ]}
+        >
+          {/* 1. Heading - Plus Jakarta Sans */}
+          <Text style={[styles.previewText, { fontFamily: fontFamily.heading, color: colors.text, fontSize: fontSize.heading }]}>
+            heading: Plus Jakarta Sans (Bold)
+          </Text>
+
+          {/* 2. Title - Nunito SemiBold */}
+          <Text style={[styles.previewText, { fontFamily: fontFamily.title, color: colors.accent, fontSize: fontSize.title }]}>
+            title: Nunito SemiBold
+          </Text>
+
+          {/* 3. Text - Nunito Medium */}
+          <Text style={[styles.previewText, { fontFamily: fontFamily.text, color: colors.subtext, fontSize: fontSize.body }]}>
+            text: Nunito Medium
+          </Text>
+
+          {/* 4. Quran - Amiri Regular */}
+          <Text style={[styles.previewText, { fontFamily: fontFamily.quran, color: colors.text, fontSize: fontSize.arabic, textAlign: "right" }]}>
+            quran: بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
+          </Text>
         </View>
       </View>
 
@@ -351,7 +383,7 @@ export default function SettingsScreen() {
               styles.cardTitle,
               {
                 color: colors.text,
-                fontFamily: fontFamily["body-semibold"],
+                fontFamily: fontFamily.title,
                 fontSize: fontSize.title,
               },
             ]}
@@ -365,8 +397,8 @@ export default function SettingsScreen() {
             styles.cardSubtitle,
             {
               color: colors.subtext,
-              fontFamily: fontFamily.body,
-              fontSize: fontSize.bodyMd,
+              fontFamily: fontFamily.text,
+              fontSize: fontSize.body,
             },
           ]}
         >
@@ -383,7 +415,7 @@ export default function SettingsScreen() {
               styles.testButtonText,
               {
                 color: "#FFFFFF",
-                fontFamily: fontFamily["body-semibold"],
+                fontFamily: fontFamily.title,
                 fontSize: fontSize.body,
               },
             ]}
@@ -392,6 +424,7 @@ export default function SettingsScreen() {
           </Text>
         </Pressable>
       </View>
+      </ScrollView>
     </SafeArea>
   );
 }
@@ -463,4 +496,14 @@ const styles = StyleSheet.create({
     gap: scale(6),
   },
   testButtonText: {},
+  previewContainer: {
+    marginTop: verticalScale(14),
+    padding: scale(14),
+    borderRadius: scale(12),
+    borderWidth: 1,
+    gap: verticalScale(10),
+  },
+  previewText: {
+    lineHeight: verticalScale(24),
+  },
 });

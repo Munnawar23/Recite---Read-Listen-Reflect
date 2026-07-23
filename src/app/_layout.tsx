@@ -1,4 +1,4 @@
-import { ErrorBoundary } from "@/components/common/ErrorBoundary";
+import { ErrorBoundary } from "@/components/layout/ErrorBoundary";
 import { useAppTheme } from "@/hooks/useAppTheme";
 import i18n from "@/i18n";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
@@ -18,12 +18,10 @@ export default function RootLayout() {
   const [queryClient] = useState(() => new QueryClient());
 
   const [fontsLoaded, fontError] = useFonts({
-    "CormorantGaramond-Bold": require("../../assets/fonts/CormorantGaramond-Bold.ttf"),
-    "Nunito-Regular": require("../../assets/fonts/Nunito-Regular.ttf"),
-    "Nunito-Medium": require("../../assets/fonts/Nunito-Medium.ttf"),
+    "PlusJakartaSans-Bold": require("../../assets/fonts/PlusJakartaSans-Bold.ttf"),
     "Nunito-SemiBold": require("../../assets/fonts/Nunito-SemiBold.ttf"),
+    "Nunito-Medium": require("../../assets/fonts/Nunito-Medium.ttf"),
     "Amiri-Regular": require("../../assets/fonts/Amiri-Regular.ttf"),
-    "Amiri-Bold": require("../../assets/fonts/Amiri-Bold.ttf"),
   });
 
   const { activeScheme } = useAppTheme();
@@ -62,5 +60,3 @@ export default function RootLayout() {
     </ErrorBoundary>
   );
 }
-
-

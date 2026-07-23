@@ -26,6 +26,32 @@
     "library": "লাইব্রেরি",
     "settings": "সেটিংস"
   },
+  "home": {
+    "greeting": {
+      "title": "আসসালামু আলাইকুম",
+      "subtitle": "আপনার দিনটি বরকতময় হোক"
+    },
+    "hijriCard": {
+      "badge": "হিজরি তারিখ",
+      "yearSuffix": "হিজরী"
+    },
+    "sectionTitles": {
+      "prayerTimes": "নামাজের সময়সূচী",
+      "dailyVerse": "দিনের আয়াত",
+      "continueReading": "পড়া চালিয়ে যান"
+    },
+    "prayerNames": {
+      "fajr": "ফজর",
+      "dhuhr": "যোহর",
+      "asr": "আসর",
+      "maghrib": "মাগরিব",
+      "isha": "এশা"
+    },
+    "locationNotice": {
+      "showingMecca": "মক্কার সময়সূচী দেখানো হচ্ছে।",
+      "enableLocation": "লোকেশন চালু করতে ট্যাপ করুন"
+    }
+  },
   "errorBoundary": {
     "title": "কিছু ভুল হয়েছে",
     "subtitle": "অ্যাপ্লিকেশনটিতে একটি অনাকাঙ্ক্ষিত ত্রুটি ঘটেছে। আপনি আবার শুরু করতে পারেন বা বর্তমান দৃশ্যটি পুনরায় সেট করার চেষ্টা করতে পারেন।"

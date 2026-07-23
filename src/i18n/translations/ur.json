@@ -24,7 +24,33 @@
     "quran": "قرآن مجید",
     "qibla": "قبلہ",
     "library": "لائبریری",
-    "settings": "ترتیبات"
+    "settings": "سیٹنگز"
+  },
+  "home": {
+    "greeting": {
+      "title": "السلام علیکم",
+      "subtitle": "آپ کا دن برکتوں سے بھرا ہو"
+    },
+    "hijriCard": {
+      "badge": "اسلامی تاریخ",
+      "yearSuffix": "ھ"
+    },
+    "sectionTitles": {
+      "prayerTimes": "اوقات نماز",
+      "dailyVerse": "آج کی آیت",
+      "continueReading": "تلاوت جاری رکھیں"
+    },
+    "prayerNames": {
+      "fajr": "فجر",
+      "dhuhr": "ظہر",
+      "asr": "عصر",
+      "maghrib": "مغرب",
+      "isha": "عشاء"
+    },
+    "locationNotice": {
+      "showingMecca": "مکہ کے اوقات دکھائے جا رہے ہیں۔",
+      "enableLocation": "لوکیشن آن کرنے کے لیے ٹیپ کریں"
+    }
   },
   "errorBoundary": {
     "title": "کچھ غلط ہو گیا",

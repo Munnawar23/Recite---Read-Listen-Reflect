@@ -26,6 +26,32 @@
     "library": "المكتبة",
     "settings": "الإعدادات"
   },
+  "home": {
+    "greeting": {
+      "title": "السَّلامُ عَلَيْكُم",
+      "subtitle": "أتمنى لك يوماً مليئاً بالبركات"
+    },
+    "hijriCard": {
+      "badge": "التاريخ الهجري",
+      "yearSuffix": "هـ"
+    },
+    "sectionTitles": {
+      "prayerTimes": "أوقات الصلاة",
+      "dailyVerse": "آية اليوم",
+      "continueReading": "متابعة القراءة"
+    },
+    "prayerNames": {
+      "fajr": "الفجر",
+      "dhuhr": "الظهر",
+      "asr": "العصر",
+      "maghrib": "المغرب",
+      "isha": "العشاء"
+    },
+    "locationNotice": {
+      "showingMecca": "عُرضت أوقات مكة المكرمة.",
+      "enableLocation": "انقر لتمكين الموقع"
+    }
+  },
   "errorBoundary": {
     "title": "حدث خطأ ما",
     "subtitle": "حدث خطأ غير متوقع في التطبيق. يمكنك محاولة إعادة التشغيل أو إعادة تعيين العرض الحالي."

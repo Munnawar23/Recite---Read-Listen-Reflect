@@ -22,9 +22,35 @@
   "tabs": {
     "home": "Beranda",
     "quran": "Al-Qur'an",
-    "qibla": "Qibla",
+    "qibla": "Kiblat",
     "library": "Perpustakaan",
     "settings": "Pengaturan"
+  },
+  "home": {
+    "greeting": {
+      "title": "Assalamu 'Alaikum",
+      "subtitle": "Semoga hari Anda penuh berkah"
+    },
+    "hijriCard": {
+      "badge": "Tanggal Hijriah",
+      "yearSuffix": "H"
+    },
+    "sectionTitles": {
+      "prayerTimes": "Waktu Shalat",
+      "dailyVerse": "Ayat Hari Ini",
+      "continueReading": "Lanjutkan Membaca"
+    },
+    "prayerNames": {
+      "fajr": "Subuh",
+      "dhuhr": "Dzuhur",
+      "asr": "Ashar",
+      "maghrib": "Maghrib",
+      "isha": "Isya"
+    },
+    "locationNotice": {
+      "showingMecca": "Menampilkan waktu Mekkah.",
+      "enableLocation": "Ketuk untuk mengaktifkan lokasi"
+    }
   },
   "errorBoundary": {
     "title": "Ada yang Salah",
